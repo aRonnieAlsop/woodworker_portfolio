@@ -7,6 +7,8 @@ const LandingPage = () => {
             {/* Full-screen background image */}
             <img src='./assets/wood_floor_PAWF_2.jpg' className="fullscreen-image" alt="Wood Flooring" />
             <div className="image-overlay"></div>
+            {/* Smooth fade to white */}
+            <div className="image-bottom-fade"></div>
 
             {/* Navigation Bar */}
             <nav className="header-nav">
