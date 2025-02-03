@@ -21,6 +21,9 @@ const LandingPage = () => {
                 <div className="image-text">NAPA</div>
                 <div className="image-text">MARIN</div>
             </div>
+            <div className="company-name-container">
+                <div className="company-name">Polly Aesop <div className="business">Wood Floors</div></div>
+            </div>
         </div>
     );
 }

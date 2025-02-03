@@ -53,10 +53,13 @@
     position: absolute;
     top: 65%; 
     right: 2vw; 
-    transform: translateY(-50%); /* ensures centering */
+    /* ensures centering: */
+    transform: translateY(-50%); 
     display: flex;
-    flex-direction: column; /* stacks text vertically */
-    align-items: flex-end; /* Aligns text to the right */
+    /* stacks text vertically: */
+    flex-direction: column; 
+     /* Aligns text to the right: */
+    align-items: flex-end;
   }
   
   .image-text {
@@ -65,29 +68,52 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     text-align: right;
-    line-height: 1.1; /* spacing between lines */
+    /* spacing between lines: */
+    line-height: 1.1; 
     letter-spacing: 1.1vw;
-    mix-blend-mode: screen; /* blends with the background */
-    opacity: .4; /* makes it appear lighter */
+    /* blends with the background: */
+    mix-blend-mode: screen; 
+    /* makes it appear lighter: */
+    opacity: .4; 
   }
   
   .header-nav {
     position: absolute;
     top: .8vh;
-    right: 4.4vw; /* position in the upper-right corner */
+    right: 4.4vw; 
     display: flex;
-    gap: 9vw; /* space between each nav item */
+    /* space between each nav item: */
+    gap: 9vw; 
   }
   
   .header-nav a {
-    color: #171717; /* Dark gray text */
+    color: #171717; 
+    font-family: "Oswald", serif;
     font-size: 2rem;
     font-weight: bold;
-    text-decoration: none; /* no underline */
-    transition: color 0.3s ease-in-out;
+    /* no underline: */
+    text-decoration: none; 
   }
   
   .header-nav a:hover {
     border-top: 1px solid red;
     border-bottom: 2px solid #FF5349;
+  }
+
+  .company-name-container {
+    position: absolute;
+    bottom: 4vh;
+  }
+
+  .company-name {
+    font-size: 2vw;
+    color: black;
+    font-family: "Dancing Script", serif;
+    font-weight: 2;
+    margin-left: 6vw;
+  }
+
+  .business {
+    font-family: "Yeseva One", serif;
+    margin-left: 4vw;
   }
