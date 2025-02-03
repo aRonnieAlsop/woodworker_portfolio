@@ -45,7 +45,7 @@
     height: auto; /* for maintaining aspect ratio */
     /* Ensures it appears above everything else: */
     z-index: 10; 
-    opacity: .8; /* makes it appear lighter */
+    opacity: .68; /* makes it appear lighter */
   }
   
 
