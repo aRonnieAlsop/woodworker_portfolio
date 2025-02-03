@@ -53,11 +53,13 @@
   
   .image-text {
     font-size: 10vw; 
-    color: white;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     text-align: right;
     line-height: 1.1; /* spacing between lines */
     letter-spacing: 1.1vw;
+    mix-blend-mode: screen; /* blends with the background */
+    opacity: .8; /* makes it appear lighter */
   }
   
