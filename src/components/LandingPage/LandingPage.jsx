@@ -3,7 +3,7 @@ import './LandingPage.css';
 
 const LandingPage = () => {
     return (
-        <div className="landing-page">
+        <div id="top" className="landing-page">
             {/* Full-screen background image */}
             <img src='./assets/wood_floor_PAWF_2.jpg' className="fullscreen-image" alt="Wood Flooring" />
             <div className="image-overlay"></div>
@@ -71,6 +71,14 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
+            {/* Footer Section >>move to another component one day<< */}
+            <footer className="landing-footer">
+                <img src='./assets/wood_floor_PAWF_2.jpg' className="footer-image" alt="Wood Flooring Footer" />
+                <div className="footer-overlay"></div>
+                <p className="back-to-top">
+                    <a href="#top">Back to the Top</a>
+                </p>
+            </footer>
         </div>
     );
 }
