@@ -1,6 +1,6 @@
 .landing-page {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -40,7 +40,7 @@ html {
 
   .logo {
     position: absolute;
-    top: 10vh; 
+    top: 2vh; 
     /* How far from the left: */
     left: 1vw;
     /* Scales based on screen width: */
@@ -56,7 +56,7 @@ html {
 
   .locations-container {
     position: absolute;
-    top: 65%; 
+    top: 63vh;
     right: 2vw; 
     /* ensures centering: */
     transform: translateY(-50%); 
@@ -108,7 +108,8 @@ html {
 
   .company-name-container {
     position: absolute;
-    bottom: 4vh;
+    top: 80vh;
+    z-index: 10;
   }
 
   .company-name {
@@ -214,7 +215,7 @@ html {
 
 .back-to-top {
   position: absolute;
-  top: 10%;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.5rem;
@@ -228,5 +229,6 @@ html {
 }
 
 .back-to-top a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  border-top: 3px solid #FF5349;
 }

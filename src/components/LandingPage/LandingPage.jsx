@@ -76,7 +76,7 @@ const LandingPage = () => {
                 <img src='./assets/wood_floor_PAWF_2.jpg' className="footer-image" alt="Wood Flooring Footer" />
                 <div className="footer-overlay"></div>
                 <p className="back-to-top">
-                    <a href="#top">Back to the Top</a>
+                    <a href="#top">BACK TO TOP</a>
                 </p>
             </footer>
         </div>
