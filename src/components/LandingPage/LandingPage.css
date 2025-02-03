@@ -1,3 +1,10 @@
+.landing-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
 .image-container {
     width: 100vw;
     height: 100vh;
@@ -38,6 +45,7 @@
     height: auto; /* for maintaining aspect ratio */
     /* Ensures it appears above everything else: */
     z-index: 10; 
+    opacity: .8; /* makes it appear lighter */
   }
   
 
@@ -60,6 +68,26 @@
     line-height: 1.1; /* spacing between lines */
     letter-spacing: 1.1vw;
     mix-blend-mode: screen; /* blends with the background */
-    opacity: .8; /* makes it appear lighter */
+    opacity: .4; /* makes it appear lighter */
   }
   
+  .header-nav {
+    position: absolute;
+    top: .8vh;
+    right: 4.4vw; /* position in the upper-right corner */
+    display: flex;
+    gap: 9vw; /* space between each nav item */
+  }
+  
+  .header-nav a {
+    color: #171717; /* Dark gray text */
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none; /* no underline */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .header-nav a:hover {
+    border-top: 1px solid red;
+    border-bottom: 2px solid #FF5349;
+  }
