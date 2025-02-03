@@ -25,3 +25,39 @@
     /* Allows interaction with the image:+ */
     pointer-events: none; 
   }
+
+  .logo {
+    position: absolute;
+    top: 10vh; 
+    /* How far from the left: */
+    left: 1vw;
+    /* Scales based on screen width: */
+    width: 30vw; 
+    /* Prevents the logo from getting too big: */
+    max-width: 500px; 
+    height: auto; /* for maintaining aspect ratio */
+    /* Ensures it appears above everything else: */
+    z-index: 10; 
+  }
+  
+
+  .locations-container {
+    position: absolute;
+    top: 65%; 
+    right: 2vw; 
+    transform: translateY(-50%); /* ensures centering */
+    display: flex;
+    flex-direction: column; /* stacks text vertically */
+    align-items: flex-end; /* Aligns text to the right */
+  }
+  
+  .image-text {
+    font-size: 10vw; 
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-align: right;
+    line-height: 1.1; /* spacing between lines */
+    letter-spacing: 1.1vw;
+  }
+  
