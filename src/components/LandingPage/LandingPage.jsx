@@ -11,7 +11,7 @@ const LandingPage = () => {
             <nav className="header-nav"> {/* Nav bar to later be moved to Header */}
             <a href="#gallery">GALLERY</a>
             <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT</a>
+            <a>CONTACT</a>
         </nav>
             {/* Logo 👇🏼*/}
             <img src='./assets/logo_PAWF.png' alt="Logo" className="logo" />

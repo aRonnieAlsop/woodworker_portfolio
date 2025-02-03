@@ -98,6 +98,7 @@
   .header-nav a:hover {
     border-top: 1px solid red;
     border-bottom: 2px solid #FF5349;
+    cursor: pointer;
   }
 
   .company-name-container {
@@ -114,6 +115,6 @@
   }
 
   .business {
-    font-family: "Yeseva One", serif;
+    font-family: "Bodoni Moda", serif;
     margin-left: 4vw;
   }
