@@ -39,7 +39,7 @@ const LandingPage = () => {
                     <div className="thatcher-showcase">
                         {/* Left Card - Image & Title */}
                         <div className="thatcher-card left">
-                            <img src="./assets/thatcher_from_front.jpg" alt="Thatcher Hotel" className="thatcher-image" />
+                            <img src="./assets/thatcher_from_side.jpg" alt="Thatcher Hotel" className="thatcher-image" />
                             <h2 className="thatcher-title">THATCHER HOTEL</h2>
                         </div>
 
@@ -47,7 +47,7 @@ const LandingPage = () => {
                         --I switched right & middle & need to change my classNames around--*/}
                         <div className="thatcher-card right">
                             <p className="thatcher-description">
-                                Polly was the sole craftsman responsible for the stunning wood flooring throughout the historic three-story boutique Thatcher Hotel. He meticulously preserved century-old wood flooring in the library, ballroom, and select spaces while seamlessly integrating new flooring in guest rooms and additional areas. His artistry ensures that the newly laid floors will age as gracefully as the preserved originals—lasting for generations and maintaining the integrity of this beautifully restored landmark.
+                                Polly was the sole craftsman responsible for the stunning wood flooring throughout the historic three-story Thatcher Hotel. He preserved century-old wood flooring in the library, ballroom, and select spaces while seamlessly integrating new flooring in guest rooms and additional areas. His artistry ensures that the newly laid floors will age as gracefully as the preserved originals—lasting for generations and maintaining the integrity of this beautifully restored landmark.
                             </p>
                         </div>
 

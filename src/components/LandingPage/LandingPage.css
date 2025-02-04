@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 
 .image-container {
     width: 100vw;
@@ -102,7 +106,7 @@ html {
   
   .header-nav a:hover {
     border-top: 1px solid red;
-    border-bottom: 2px solid #FF5349;
+    border-bottom: 2px solid coral;
     cursor: pointer;
   }
 
@@ -169,17 +173,26 @@ html {
   margin-top: 10px;
   font-weight: bold;
   font-family: "Oswald", serif;
+  text-decoration: none;
 }
 
 
-.thatcher-visit-link {
+.thatcher-visit-link a {
   text-decoration: none;
+  font-family: "Oswald", serif;
+  color: black;
+  font-size: 2rem;
+}
+
+.thatcher-visit-link a:hover {
+  border-bottom: 2px solid coral;
 }
 
 .thatcher-description {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #333;
+  text-decoration: none;
 }
 
 .thatcher-card.placeholder {
@@ -194,7 +207,10 @@ html {
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
+
+
 
 
 /* Footer Styles */
@@ -241,4 +257,21 @@ html {
 .back-to-top a:hover {
   text-decoration: none;
   border-top: 3px solid #FF5349;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: tan;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: tan;
 }
