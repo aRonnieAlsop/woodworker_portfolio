@@ -45,14 +45,13 @@ const LandingPage = () => {
 
                         {/* Middle Card - Link to Thatcher Hotel 
                         --I switched right & middle & need to change my classNames around--*/}
-                        <div className="thatcher-card right">
+                        <div className="thatcher-card">
                             <p className="thatcher-description">
-                                Polly was the sole craftsman responsible for the stunning wood flooring throughout the historic three-story Thatcher Hotel. He preserved century-old wood flooring in the library, ballroom, and select spaces while seamlessly integrating new flooring in guest rooms and additional areas. His artistry ensures that the newly laid floors will age as gracefully as the preserved originals—lasting for generations and maintaining the integrity of this beautifully restored landmark.
+                                Polly was the sole craftsman responsible for the stunning wood flooring throughout the historic three-story Thatcher Hotel. He preserved century-old wood flooring in the library, stairs, ballroom, and select spaces while seamlessly integrating new flooring in guest rooms, and additional areas. His artistry ensures that the newly laid floors will age as gracefully as the preserved originals—lasting for generations and maintaining the integrity of this beautifully restored landmark.
                             </p>
                         </div>
-
                         {/* Right Card - Description */}
-                        <div className="thatcher-card middle">
+                        <div className="thatcher-card">
                             <div className="thatcher-preview">
                                 <iframe
                                     src="https://www.thatcherhotel.com/amenities"
@@ -63,14 +62,20 @@ const LandingPage = () => {
                                     <a href="https://www.thatcherhotel.com/amenities" target="_blank" rel="noopener noreferrer">Visit Thatcher Hotel</a>
                                 </p>
                             </div>
-
-                        </div>
-
-                        {/* Placeholder for Future Image Gallery */}
-                        <div className="thatcher-card placeholder">
-                            <p>Gallery coming soon...</p>
                         </div>
                     </div>
+                     {/* Gallery Image Cards - Below the Main Cards */}
+                     <div className="thatcher-gallery">
+                        <div className="gallery-card">
+                        <img src="./assets/thatcher_room_4.jpg" alt="Thatcher Hotel Room" className="gallery-image" />
+                        </div>
+                        <div className="gallery-card">
+                        <img src="./assets/Thatcher_1_bar.jpg" alt="Thatcher Bar" className="gallery-image" />
+                        </div>
+                        <div className="gallery-card">
+                        <img src="./assets/Thatcher_3_Library.jpg" alt="Thatcher Library" className="gallery-image" />
+                        </div>
+                     </div>
                 </div>
             </div>
             {/* Footer Section >>move to another component one day<< */}

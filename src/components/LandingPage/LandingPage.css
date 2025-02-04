@@ -29,6 +29,7 @@ html, body {
     object-fit: cover; 
     object-position: center; 
     display: block;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.08);
   }
   
   .image-overlay {
@@ -51,7 +52,7 @@ html, body {
     width: 30vw; 
     /* Prevents the logo from getting too big: */
     max-width: 500px; 
-    height: auto; /* for maintaining aspect ratio */
+    height: auto; 
     /* Ensures it appears above everything else: */
     z-index: 10; 
     opacity: .68; /* makes it appear lighter */
@@ -210,8 +211,38 @@ html, body {
   text-decoration: none;
 }
 
+/* Thatcher Gallery - Below the Main Cards */
+.thatcher-gallery {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+   /* stretches closer to screen edges: */
+  width: 98vw;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap; 
+}
 
+/* Individual Image Cards */
+.gallery-card {
+  flex: 1 1 23%; /* makes them grow/shrink evenly */
+  min-width: 300px; 
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+/* Images Inside Gallery Cards */
+.gallery-image {
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
 
 /* Footer Styles */
 .landing-footer {
@@ -274,4 +305,21 @@ html, body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: tan;
+}
+
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 1200px) {
+   /* 2 per row on medium screens: */
+  .gallery-card {
+      flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-card {
+    /* 1 per row on smaller screens: */
+      flex: 1 1 100%; 
+      min-width: 250px; /* keeps them from getting too small */
+  }
 }
