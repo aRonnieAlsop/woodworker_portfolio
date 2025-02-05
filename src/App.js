@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import MockContact from "./components/Contact/MockContact";
 
 const App = () => {
@@ -13,7 +12,6 @@ const App = () => {
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/contact" element={<MockContact />} />
             </Routes>
-            <Footer />
         </Router>
     );
 };

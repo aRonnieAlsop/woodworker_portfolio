@@ -16,6 +16,7 @@ const LandingPage = () => {
             <RelocationPopup />
             <Gallery />
             <FairUseNotice />
+            <Footer />
         </div>
     );
 }

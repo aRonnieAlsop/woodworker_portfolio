@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./MockContactForm.css"; 
+import { useNavigate } from 'react-router-dom';
+import "./MockContactForm.css";
 
 const MockContactForm = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -21,6 +23,10 @@ const MockContactForm = () => {
 
     return (
         <div className="contact-container">
+            {/* Back Button (Separate from the form) */}
+            <div className="back-container">
+                <button onClick={() => navigate(-1)} className="back-button">← BACK</button>
+            </div>
             <h2>Contact</h2>
             <p>Reach out for special project requests.</p>
 
@@ -65,6 +71,7 @@ const MockContactForm = () => {
                 <button type="submit">Send Message</button>
             </form>
         </div>
+
     );
 };
 
