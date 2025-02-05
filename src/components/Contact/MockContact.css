@@ -1,0 +1,15 @@
+.contact-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("https://images.squarespace-cdn.com/content/v1/582fd7e3893fc0b69dc97d72/1502935285338-OSUYOLOXLSJWMJZQ7FJO/IMG_5163.jpg") no-repeat center center/cover;
+}
+
+.background-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for contrast */
+}
