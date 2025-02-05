@@ -1,3 +1,18 @@
+/* Viewport Size Display */
+.viewport-size {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  z-index: 999;
+  opacity: 0.8;
+}
+
 .landing-page {
   min-width: 100vw;
   min-height: 100vh;
@@ -363,7 +378,7 @@ html, body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments for part of thatcher gallery */
 @media (max-width: 1024px) {
   .large-thatcher-card {
       flex-direction: column;
@@ -380,18 +395,41 @@ html, body {
 }
 
 
-/* ✅ Responsive Adjustments */
-@media (max-width: 1200px) {
-   /* 2 per row on medium screens: */
-  .gallery-card {
-      flex: 1 1 45%;
-  }
-}
 
-@media (max-width: 768px) {
-  .gallery-card {
-    /* 1 per row on smaller screens: */
-      flex: 1 1 100%; 
-      min-width: 250px; /* keeps them from getting too small */
+/* 📱 Mobile & Tablet (Max 700px) */
+@media (max-width: 720px) {
+  .image-overlay {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 1) 9vw, rgba(255, 255, 255, 0.4) 16vw, rgba(255, 255, 255, 0) 25vw);
+  }
+  .hero {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    top: 2%;
+    left: 35%;
+    width: 35vw; 
+    max-width: 220px;
+  }
+
+  .locations-container {
+    top: 8%;
+    flex-direction: column;
+  }
+
+  .image-text {
+    font-size: 7vw;
+  }
+
+  .company-name-container {
+    flex-direction: row;
+    top: 11%;
+    bottom: 6vh;
+    font-size: 1.5rem;
+  }
+
+  .company-name, .business {
+    font-family: "Merriweather", serif;
   }
 }
