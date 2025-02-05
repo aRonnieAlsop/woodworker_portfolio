@@ -8,31 +8,6 @@
     align-items: center;
 }
 
-/* Back Button Placement */
-.back-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.back-button {
-    background: #faeddb;
-    border: 1px solid black;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    font-size: 1.2rem;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: "Oswald", serif;
-    padding: 8px 116px  8px 100px;
-    transition: background 0.3s;
-    border-radius: 5px;
-}
-
-.back-button:hover {
-    background-color: white;
-}
-
 .contact-container {
     width: 90%;
     max-width: 600px;

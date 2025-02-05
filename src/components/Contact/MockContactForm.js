@@ -23,10 +23,6 @@ const MockContactForm = () => {
 
     return (
         <div className="contact-container">
-            {/* Back Button (Separate from the form) */}
-            <div className="back-container">
-                <button onClick={() => navigate(-1)} className="back-button">← BACK</button>
-            </div>
             <h2>Contact</h2>
             <p>Reach out for special project requests.</p>
 
