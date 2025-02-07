@@ -527,11 +527,11 @@ html, body {
   }
 
   .thatcher-title {
-    font-size: 1.6rem; /* Adjust font size for smaller screens */
+    font-size: 1.6rem;
   }
 
   .thatcher-description {
-    font-size: 1rem; /* Adjust description font size for readability */
+    font-size: 1rem; 
     line-height: 1.5;
     color: #333;
     text-decoration: none;
@@ -539,11 +539,15 @@ html, body {
 
   .thatcher-preview iframe {
     width: 100%;
-    height: 200px; /* Adjust iframe height for smaller screens */
+    height: 300px; 
+  }
+
+  .large-card-iframe {
+    width: 100%;
   }
 
   .thatcher-visit-link a {
-    font-size: 1.4rem; /* Make the link font size smaller */
+    font-size: 1.4rem;
   }
 }
 
@@ -556,13 +560,13 @@ html, body {
   }
 
   .thatcher-description {
-    font-size: 0.9rem; /* Make the description font smaller for very small screens */
+    font-size: 0.9rem; 
     line-height: 1.4;
     padding: 0 10px;
   }
 
   .thatcher-preview iframe {
-    height: 180px; /* Further reduce iframe height on very small screens */
+    height: 300px; 
   }
 
   .thatcher-title {
