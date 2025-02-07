@@ -1,15 +1,71 @@
+/* About Section Container */
 .about-container {
     position: relative;
     width: 100vw;
     height: 100vh;
     background: url("./../../../public/assets/Thatcher_3_Library.jpg") no-repeat center center/cover;
+    /* makes the background scroll with the page: */
+    background-attachment: fixed; 
 }
 
+/* Background Overlay for Text Readability */
 .background-overlay {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* dark overlay to make text more readable: */
+    background: rgba(0, 0, 0, 0.4); 
+}
 
+/* About Text Container */
+.about-words-container {
+    width: 90%;
+    max-width: 800px;
+    /* semi-transparent background: */
+    background: rgba(250, 237, 219, 0.89); 
+    padding: 30px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: "Oswald", serif;
+    color: #333; 
+    border-radius: 6.2px;
+    font-size: 1.2rem;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        /* allows height to adjust on smaller screens: */
+        height: auto; 
+    }
+
+    .about-words-container {
+        padding: 20px;
+        padding-top: 30px;
+        /* makes the text container more flexible: */
+        max-width: 71%; 
+        font-size: 1rem; 
+    }
+
+    .about-words-container p {
+        font-size: 1.1rem; 
+        line-height: 1.6; 
+    }
+}
+
+/* Small Screen (Mobile) Responsiveness */
+@media (max-width: 480px) {
+    .about-words-container {
+        font-size: 0.9rem; 
+        padding: 15px;
+    }
+
+    .about-words-container p {
+        /* to keep text at a readable size: */
+        font-size: 1rem; 
+        /* to ensure good text flow: */
+        line-height: 1.5; 
+    }
 }
