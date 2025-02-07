@@ -10,7 +10,6 @@ import './LandingPage.css';
 const LandingPage = () => {
     return (
         <div id="top" className="landing-page">
-            <Header />
             <Hero />
             {/* This will trigger the pop-up on first visit */}
             <RelocationPopup />

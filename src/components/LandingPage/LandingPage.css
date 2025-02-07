@@ -380,7 +380,7 @@ html, body {
 
 /* Header Container */
 .header-container {
-  position: fixed;
+  position: relative;
   top: 1vh;
   right: 4vw;
   z-index: 1000;
@@ -414,6 +414,10 @@ html, body {
   font-weight: bold;
   color: #171717;
   transition: transform 0.3s ease;
+  position: absolute;
+  right: 2rem;
+  background: transparent;
+  border: none;
 }
 
 .menu-icon:hover {
@@ -450,6 +454,16 @@ html, body {
 
 .dropdown-menu a:hover {
   border-bottom: 2px solid coral;
+}
+
+/* When on Contact Page */
+.contact-page-nav a {
+  color: white !important; 
+}
+
+/* Special styling when on Contact or About page */
+.contact-menu-icon {
+  color: white; 
 }
 
 /* Hide normal nav on mobile */

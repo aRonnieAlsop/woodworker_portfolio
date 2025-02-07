@@ -1,0 +1,15 @@
+.about-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("./../../../public/assets/Thatcher_3_Library.jpg") no-repeat center center/cover;
+}
+
+.background-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
