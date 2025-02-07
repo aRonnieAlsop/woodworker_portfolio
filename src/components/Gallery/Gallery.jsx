@@ -1,7 +1,29 @@
-import React from 'react';
-import './../LandingPage/LandingPage.css';
+import React, { useEffect, useRef } from 'react';
+import './Gallery.css';
+import FairUseNotice from '../FairUse/FairUseNotice';
+import Player from '@vimeo/player';
 
 const Gallery = () => {
+    const iframeRef = useRef(null); // creates a ref to store the iframe
+
+    useEffect(() => {
+        // initializes the Vimeo player when the component mounts:
+        const player = new Player(iframeRef.current);
+
+        // Event listener for when the video starts
+        player.on('play', () => {
+            const overlay = document.querySelector(".video-overlay");
+            if (overlay) {
+                overlay.style.display = "none";
+            }
+        });
+
+        // cleans up the player when the component unmounts:
+        return () => {
+            player.off('play');
+        };
+    }, []);
+
     return (
         <div id="gallery">
             <div className="gallery-container">
@@ -60,6 +82,28 @@ const Gallery = () => {
                         ></iframe>
                     </div>
                 </div>
+                <FairUseNotice />
+                {/* Larger Card for Carriage House video */}
+                <div className="large-thatcher-card-video">
+                    <div className="large-card-iframe-video">
+                         {/* Use the ref to target the iframe */}
+                         <iframe
+                        ref={iframeRef}
+                        src="https://player.vimeo.com/video/1054591327?h=441a9239b3&badge=0&autopause=0&player_id=0&app_id=58479"
+                        width="640"
+                        height="564"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                        title="Carriage House || Thatcher Hotel"
+                    ></iframe>
+
+                    </div>
+                    <div className="video-overlay">
+                        <h2>Restored wood flooring from the late 1800s throughout the Keiffer Carriage House</h2>
+                    </div></div>
+            </div>
+            <div className="brand-container">
+                <div className="brand-card"><img src="https://raw.githubusercontent.com/aRonnieAlsop/readMe_assets/refs/heads/main/public/assets/IMG_0771.jpeg" /></div>
             </div>
         </div>
     );
