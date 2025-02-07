@@ -46,7 +46,7 @@ const Header = () => {
         <header className="header-container">
             {/* Normal Navbar for Larger Screens */}
             {!isMobile ? (
-                <nav className={`header-nav ${location.pathname === "/contact" || "/about" ? "contact-page-nav" : ""}`}>
+                <nav className={`header-nav ${location.pathname === "/contact" || location.pathname === "/about" ? "contact-page-nav" : ""}`}>
                     <a href="/" onClick={handleGalleryClick}>GALLERY</a>
                     <Link to="/about">ABOUT</Link>
                     <Link to="/contact">CONTACT</Link>
