@@ -120,11 +120,23 @@ const Gallery = () => {
             </div> 
             </div>
             <div className="additional-works"><h2>ADDITIONAL WORKS</h2></div>
-            <div className="works-card">
-            <div><img className="works-type"  src="./assets/install_2.jpg" /></div>
-            <div><img className="works-type"  src="./assets/restoration_1.jpeg" /></div>
-            <div><img className="works-type stairs"  src="./assets/stairs_3.jpg" /></div>
-            <div><img className="works-type inlay"  src="./assets/inlay_1.jpg" /></div>
+            <div className="additional-works-showcase">
+            <div className="works-type">
+            <img className="types-img install"  src="./assets/install_2.jpg" /> 
+            <h2 className="works-type-title">Installations</h2>
+            </div>
+            <div className="works-type">
+            <img className="types-img repairs"  src="./assets/restoration_1.jpeg" /> 
+            <h2 className="works-type-title">Repairs</h2>
+            </div>
+            <div className="works-type">
+            <img className="types-img stairs"  src="./assets/stairs_3.jpg" /> 
+            <h2 className="works-type-title">Stairs</h2>
+            </div>
+            <div className="works-type">
+            <img className="types-img inlay"  src="./assets/inlay_1.jpg" /> 
+            <h2 className="works-type-title">Inlays</h2>
+            </div>
             </div>
         </div>
     );

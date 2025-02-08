@@ -269,22 +269,14 @@
   }
 
   /* additional works cards */
-  .works-card {
+  .additional-works-showcase {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    gap: 15px;
-    margin-top: 10px;
-    width: 100%;  
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
   }
-  
+
   .works-type {
-    flex-basis: 22%; 
-    max-width: 300px; /* ➡️ prevents images from growing too large */
     background: #f8f8f8;
     border-radius: 8px;
     padding: 10px;
@@ -292,23 +284,37 @@
     text-align: center;
   }
   
-  
-  
-  .works-type img {
-    width: 100%; 
-    max-width: 100%; /* ➡️ prevents images from being stretched beyond their container */
-    height: auto;
+  .types-img {
+    width: 100%;
     border-radius: 8px;
   }
-
-  .inlay {
-    max-width: 200px;
-  }
-
-  .stairs {
-    max-width: 250px;
-  }
   
+  .works-type-title {
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: "Oswald", serif;
+    text-decoration: none;
+    letter-spacing: .2rem;
+  }
+
+.install {
+  max-width: 300px;
+}
+
+.repairs {
+  max-width: 280px;
+}
+
+.inlay {
+  max-width: 200px;
+}
+
+.stairs {
+  max-width: 250px;
+  max-height: 250px;
+}
+
 
 
   /* Media Query for smaller screens (Tablet or Mobile) */
