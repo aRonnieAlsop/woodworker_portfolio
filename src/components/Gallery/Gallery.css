@@ -143,11 +143,47 @@
     margin-left: auto;
     margin-right: auto;
     position: relative; /* ➡️ needed for the overlay */
+    display: flex;
+    justify-content: center;
   }
   
-  .large-card-iframe-video {
-    position: relative; /* ensures that the overlay is positioned over the iframe */
+  .large-card-iframe-video iframe {
+    width: 100%;
+    height: auto;
+    max-width: 640px; /* To ensure it doesn't stretch too large */
+    border: none;
+    border-radius: 8px;
   }
+  
+  /* Responsive adjustment for smaller screens */
+  @media (max-width: 1024px) {
+    .large-thatcher-card-video {
+      max-width: 100%; /* Makes the container flexible */
+      padding: 15px;
+      flex-direction: column;  /* Stack vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .large-card-iframe-video iframe {
+      width: 100%; /* Allow the iframe to be responsive */
+      max-width: none; /* Allow the iframe to adjust its size freely */
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .large-thatcher-card-video {
+      max-width: 100%;  /* Makes the video container take full width */
+      padding: 10px;
+    }
+  
+    .large-card-iframe-video iframe {
+      width: 100%;
+      height: auto;
+      max-width: 100%; /* Ensure iframe takes full width */
+    }
+  }
+  
   
   .video-overlay {
     position: absolute;
@@ -229,26 +265,12 @@
 @media (max-width: 720px) {
     .brand-video-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
     }
     
     .large-thatcher-card-video {
         padding: 15px; /* ➡️ reduces padding on small screens */
-    }
-}
-
-/* For tablets and smaller screens */
-@media (max-width: 1024px) {
-    .brand-container {
-        height: auto; /* Let it adjust based on content on smaller screens */
-    }
-}
-
-/* For mobile screens */
-@media (max-width: 720px) {
-    .brand-container {
-        height: auto; /* Adjust the height to fit content */
-        margin-top: 10px; /* Give some space at the top on mobile */
     }
 }
   
@@ -294,6 +316,7 @@
     .large-thatcher-card {
         flex-direction: column;
         text-align: center;
+        width: 90%;
     }
   
     .large-card-text {
@@ -302,11 +325,6 @@
   
     .accommodations-iframe {
         height: 300px;
-    }
-  
-    .large-thatcher-card-video {
-      flex-direction: column;
-      text-align: center;
     }
   }
   
@@ -380,7 +398,7 @@
     }
   
     .thatcher-description {
-      font-size: 0.9rem; 
+      font-size: 1rem; 
       line-height: 1.4;
       padding: 0 10px;
     }

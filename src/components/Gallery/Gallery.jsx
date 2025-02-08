@@ -102,9 +102,7 @@ const Gallery = () => {
                     <div className="video-overlay">
                         <h2>Restored wood flooring from the late 1800s throughout the Keiffer Carriage House</h2>
                     </div></div>
-                 <div className="brand-container">
-                <div className="brand-card"><img src="https://raw.githubusercontent.com/aRonnieAlsop/readMe_assets/refs/heads/main/public/assets/IMG_0771.jpeg" /></div>
-            </div>  
+                 
             </div> 
             </div>
         </div>
