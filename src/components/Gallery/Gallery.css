@@ -253,6 +253,64 @@
     margin: 0 auto; /* ➡️ centers the image horizontally */
   }
 
+  .additional-works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bodoni Moda", serif;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    text-shadow: h-offset v-offset blur-radius color;
+    background: #181717;
+    color: white;
+    padding-top: .3rem;
+    padding-bottom: .5rem;
+    margin-top: 20px;
+  }
+
+  /* additional works cards */
+  .works-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;  
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  
+  .works-type {
+    flex-basis: 22%; 
+    max-width: 300px; /* ➡️ prevents images from growing too large */
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  
+  
+  .works-type img {
+    width: 100%; 
+    max-width: 100%; /* ➡️ prevents images from being stretched beyond their container */
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .inlay {
+    max-width: 200px;
+  }
+
+  .stairs {
+    max-width: 250px;
+  }
+  
+
+
   /* Media Query for smaller screens (Tablet or Mobile) */
 @media (max-width: 1024px) {
     .large-thatcher-card-video {
@@ -413,6 +471,21 @@
   
     .thatcher-visit-link a {
       font-size: 1.2rem;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .works-type {
+      flex: 1 1 48%; /* Takes 48% of the container width on smaller screens */
+      min-width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .works-type {
+      flex: 1 1 100%; /* Full width for very small screens */
+      min-width: 100%;
     }
   }
   

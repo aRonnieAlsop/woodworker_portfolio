@@ -115,9 +115,16 @@ const Gallery = () => {
                     </div>
                     <div className="video-overlay">
                         <h2>Restored wood flooring from the late 1800s throughout the Keiffer Carriage House</h2>
-                    </div></div>
-                 
+                    </div>
+                    </div>    
             </div> 
+            </div>
+            <div className="additional-works"><h2>ADDITIONAL WORKS</h2></div>
+            <div className="works-card">
+            <div><img className="works-type"  src="./assets/install_2.jpg" /></div>
+            <div><img className="works-type"  src="./assets/restoration_1.jpeg" /></div>
+            <div><img className="works-type stairs"  src="./assets/stairs_3.jpg" /></div>
+            <div><img className="works-type inlay"  src="./assets/inlay_1.jpg" /></div>
             </div>
         </div>
     );
