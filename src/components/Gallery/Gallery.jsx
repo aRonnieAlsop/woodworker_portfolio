@@ -18,9 +18,23 @@ const Gallery = () => {
             }
         });
 
+            // Event listener for when the video ends
+    player.on('ended', () => {
+        const overlay = document.querySelector(".video-overlay");
+        if (overlay) {
+            overlay.style.display = "flex"; // shows the overlay when the video ends
+            overlay.style.position = "absolute"; 
+            overlay.style.top = "50%";
+            overlay.style.left = "50%"; 
+            overlay.style.transform = "translate(-50%, -50%)"; 
+            overlay.style.zIndex = "10"; 
+        }
+    });
+
         // cleans up the player when the component unmounts:
         return () => {
             player.off('play');
+            player.off('ended');
         };
     }, []);
 

@@ -250,7 +250,7 @@
     height: auto; 
     /* to remove inline-block space below the image: */
     display: block; 
-    margin: 0 auto; /* centers the image horizontally */
+    margin: 0 auto; /* ➡️ centers the image horizontally */
   }
 
   /* Media Query for smaller screens (Tablet or Mobile) */
