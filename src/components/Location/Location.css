@@ -1,0 +1,16 @@
+
+.map-container {
+    background-color: #f0f0f0; /* Add background to check visibility */
+    border: 2px solid #ccc;    /* Add border for testing */
+  }
+  
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; 
+  }
+
+  html {
+    scroll-behavior: smooth;
+}

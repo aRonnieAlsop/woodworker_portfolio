@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
+import smoothScroll from 'smooth-scroll-into-view-if-needed';
 
-const Header = () => {
+const Header = ({ mapSectionRef }) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
@@ -41,6 +42,16 @@ const Header = () => {
         setMenuOpen(false); // Close dropdown menu if mobile
     };
 
+    const handleLocationClick = (e) => {
+        e.preventDefault();
+        if (mapSectionRef && mapSectionRef.current) {
+          mapSectionRef.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      };
+
 
     return (
         <header className="header-container">
@@ -50,6 +61,7 @@ const Header = () => {
                     <a href="/" onClick={handleGalleryClick}>GALLERY</a>
                     <Link to="/about">ABOUT</Link>
                     <Link to="/contact">CONTACT</Link>
+                    <a onClick={handleLocationClick}>LOCATION</a>
                 </nav>
             ) : (
                 // Dropdown Menu Icon for Mobile Screens
@@ -62,6 +74,7 @@ const Header = () => {
                     <a href="/" onClick={handleGalleryClick}>GALLERY</a>
                     <Link to="/about" onClick={() => setMenuOpen(false)}>ABOUT</Link>
                     <Link to="/contact" onClick={() => setMenuOpen(false)}>CONTACT</Link>
+                    <a onClick={handleLocationClick}>LOCATION</a>
                 </nav>
             )}
         </header>
