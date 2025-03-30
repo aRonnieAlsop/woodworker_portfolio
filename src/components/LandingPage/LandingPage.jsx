@@ -28,7 +28,9 @@ const LandingPage = () => {
             <RelocationPopup />
             <Gallery />
             <div id="map-section" className="map-section">
-                <GoogleMapComponent />
+                <div className="map-wrapper">
+                    <GoogleMapComponent />
+                </div>
             </div>
             <Footer />
         </div>

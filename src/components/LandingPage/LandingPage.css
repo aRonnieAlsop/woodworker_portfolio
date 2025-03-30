@@ -321,6 +321,29 @@ html, body {
   color: white; 
 }
 
+/* location section */
+.map-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 2rem 0;
+  min-height: 500px;      
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .logo {
+     top: 6.2vh;
+  }
+}
+
 /* Hide normal nav on mobile */
 @media (max-width: 700px) {
   .header-nav {
