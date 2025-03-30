@@ -44,14 +44,22 @@ const Header = ({ mapSectionRef }) => {
 
     const handleLocationClick = (e) => {
         e.preventDefault();
-        if (mapSectionRef && mapSectionRef.current) {
-          mapSectionRef.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
+        console.log("location clicked");
+      
+        if (location.pathname !== "/") {
+          navigate("/", { state: { scrollToMap: true } });
+        } else {
+          const mapSection = document.getElementById("map-section");
+          if (mapSection) {
+            mapSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            console.log("map-section not found in DOM");
+          }
         }
+      
+        setMenuOpen(false);
       };
-
+      
 
     return (
         <header className="header-container">
@@ -74,7 +82,7 @@ const Header = ({ mapSectionRef }) => {
                     <a href="/" onClick={handleGalleryClick}>GALLERY</a>
                     <Link to="/about" onClick={() => setMenuOpen(false)}>ABOUT</Link>
                     <Link to="/contact" onClick={() => setMenuOpen(false)}>CONTACT</Link>
-                    <a onClick={handleLocationClick}>LOCATION</a>
+                    <a href="#" onClick={handleLocationClick}>LOCATION</a>
                 </nav>
             )}
         </header>
