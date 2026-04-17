@@ -22,7 +22,7 @@ const Hero = () => {
             {/* Company Name */}
             <div className="company-name-container">
                 <div className="company-name">
-                    Polly Aesop <div className="business">Wood Floors</div>
+                    PAUL ALSOP<div className="business">Wood Floors</div>
                 </div>
             </div>
         </div>
